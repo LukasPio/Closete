@@ -2,9 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-.body{
     font-family: Arial;
 }
 
@@ -279,4 +276,11 @@ main{
 .exclusive-container img{
     max-width: 500px;
 
+}
+
+.footer {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: white;
 }
