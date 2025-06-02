@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="pr-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Store | e-comerce</title>
     <link rel="stylesheet" href="styles/globals.css" />
+    <script src="./index.js" defer></script>
 </head>
+
 <body>
-    <div class="navbar show-menu">    
+    <div class="navbar show-menu">
         <div class="header-inner-content">
-            <h1 class="logo" >STREET<span>STORE</span></h1>
+            <h1 class="logo">STREET<span>STORE</span></h1>
             <nav>
-                 <ul>
+                <ul>
                     <li>Home</li>
                     <li>Produtos</li>
                     <li>Contato</li>
                 </ul>
             </nav>
             <div class="nav-icon-container">
-              <img src="images/cart.png"/>
-              <img src="images/menu.png" class="menu-buttom"/>  
+                <img src="images/cart.png" />
+                <img src="images/menu.png" class="menu-buttom" />
             </div>
         </div>
     </div>
@@ -29,27 +32,46 @@
             <div class="header-bottom-side">
                 <div class="header-bottom-side-left">
                     <h2>Novo estilo ao seu dia-a-dia</h2>
-                    <p> Sucesso profissional é um conceito subjetivo que varia de pessoa para pessoa, mas geralmente é definido como a realização de metas e objetivos na carreira, com satisfação e reconhecimento!
-                    </p>
                     <button>Saiba mais &#8594;</button>
                 </div>
                 <div class="header-bottom-side-right">
-                    <img src="images/gaming-msi-header.png" alt=""/>
+                    <img src="products/short_masculino.png" alt="" />
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-     <main>
-        <div class="gray-background">
-            <div class="page-inner-content">
-                <div class="colsproducts cols-3">  <!-- Adicione o traço -->
-                    <img src="products/blusa_de_manga_longa_feminina.png" alt="" />
-                    <img src="products/blusa_gotica.png" alt="" />
-                    <img src="products/blusa_gotica2.png" alt="" />
-                </div>
-            </div>    
+    <main>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="carousel-img" src="products/blusa_gotica2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="carousel-img" src="products/blusaazuly2k.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="carousel-img" src="products/blusa_gotica.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
         <div>
@@ -57,117 +79,124 @@
                 <h3 class="section-title">Produtos Selecionados</h3>
                 <div class="subtitle-underline"></div>
                 <div class="cols cols-4">
-                    <div class="product">
+                    <a class="product">
                         <img src="products/blusaazuly2k.png" alt="" />
                         <p class="product-name">Combo Gamer</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                         <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
+                    </a>
+                    <a href="https://pt.aliexpress.com/item/1005008394530828.html?gps-id=pcStoreLeaderboard&scm=1007.22922.271278.0&scm_id=1007.22922.271278.0&scm-url=1007.22922.271278.0&pvid=d60c7266-a01d-4c30-87a3-804b586d7ebf&_t=gps-id%3ApcStoreLeaderboard%2Cscm-url%3A1007.22922.271278.0%2Cpvid%3Ad60c7266-a01d-4c30-87a3-804b586d7ebf%2Ctpp_buckets%3A668%232846%238115%232000&pdp_ext_f=%7B%22order%22%3A%2254%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2212922%22%7D&pdp_npi=4%40dis%21BRL%21212.32%21129.06%21%21%21256.61%21155.98%21%40210337bc17476850847487359edee2%2112000044839875136%21rec%21BR%214254928815%21X&spm=a2g0o.store_pc_home.smartLeaderboard_2011101347554.1005008394530828&gatewayAdapt=glo2bra"
+                        class="product">
                         <img src="products/blusinha_onca.png" alt="" />
                         <p class="product-name">Placa de Vídeo</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                         <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
+                    </a>
+                    <a href="https://pt.aliexpress.com/item/1005008450963812.html?gps-id=pcStoreLeaderboard&scm=1007.22922.271278.0&scm_id=1007.22922.271278.0&scm-url=1007.22922.271278.0&pvid=3d8a2259-5f9e-451b-ba7e-8271d55fd85a&_t=gps-id%3ApcStoreLeaderboard%2Cscm-url%3A1007.22922.271278.0%2Cpvid%3A3d8a2259-5f9e-451b-ba7e-8271d55fd85a%2Ctpp_buckets%3A668%232846%238115%232000&pdp_ext_f=%7B%22order%22%3A%22307%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2212922%22%7D&pdp_npi=4%40dis%21BRL%21134.20%2177.54%21%21%21162.19%2193.71%21%402101ea7117476855438196594ee39f%2112000045195512230%21rec%21BR%214254928815%21XZ&spm=a2g0o.store_pc_home.smartLeaderboard_2005335955556.1005008450963812&gatewayAdapt=glo2bra"
+                        class="product">
                         <img src="products/castiel.png" alt="" />
                         <p class="product-name">Controle Gamer</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                         <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
+                    </a>
+                    <a class="product">
                         <img src="products/castiel2.png" alt="" />
                         <p class="product-name">Cadeira Gamer</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                         <p class="product-price">4,000.00 <span>M2</span></p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="page-inner-content">
+                    <h3 class="section-title">Produtos em Destaque</h3>
+                    <div class="subtitle-underline"></div>
+                    <div class="cols cols-4">
+                        <a href="https://pt.aliexpress.com/item/1005008161260570.html?spm=a2g0o.productlist.main.50.5a383841S1Zyqm&aem_p4p_detail=202505191311063762950752806200005402765&algo_pvid=096dec72-2344-4ba2-a15c-cf963c364088&algo_exp_id=096dec72-2344-4ba2-a15c-cf963c364088-49&pdp_ext_f=%7B%22order%22%3A%22295%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21BRL%21131.66%2176.02%21%21%21159.13%2191.88%21%402101ea7117476854664374356ee343%2112000044043941956%21sea%21BR%214254928815%21X&curPageLogUid=XiIZ6nQta5DJ&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202505191311063762950752806200005402765_13"
+                            class="product">
+                            <img src="products/cruz.png" alt="" />
+                            <p class="product-name">Celular 01</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="https://pt.aliexpress.com/item/1005005545871310.html?gps-id=pcStoreJustForYou&scm=1007.23125.137358.0&scm_id=1007.23125.137358.0&scm-url=1007.23125.137358.0&pvid=03a333d6-8de6-497b-abca-c65b78688c38&_t=gps-id%3ApcStoreJustForYou%2Cscm-url%3A1007.23125.137358.0%2Cpvid%3A03a333d6-8de6-497b-abca-c65b78688c38%2Ctpp_buckets%3A668%232846%238115%232000&pdp_ext_f=%7B%22order%22%3A%225%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2213125%22%7D&pdp_npi=4%40dis%21BRL%21150.64%2181.43%21%21%21182.07%2198.42%21%402101ea7117476855438276597ee39f%2112000033485321848%21rec%21BR%214254928815%21X&spm=a2g0o.store_pc_home.smartJustForYou_2005335955560.1005005545871310&gatewayAdapt=glo2bra"
+                            class="product">
+                            <img src="products/eduardosim.png" alt="" />
+                            <p class="product-name">Celular 02</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="" class="product">
+                            <img src="products/jeans.png" alt="" />
+                            <p class="product-name">Celular 04/p>
+                                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="https://pt.aliexpress.com/item/1005008314870896.html?gps-id=pcStoreLeaderboard&scm=1007.22922.271278.0&scm_id=1007.22922.271278.0&scm-url=1007.22922.271278.0&pvid=d60c7266-a01d-4c30-87a3-804b586d7ebf&_t=gps-id%3ApcStoreLeaderboard%2Cscm-url%3A1007.22922.271278.0%2Cpvid%3Ad60c7266-a01d-4c30-87a3-804b586d7ebf%2Ctpp_buckets%3A668%232846%238115%232000&pdp_ext_f=%7B%22order%22%3A%2223%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2212922%22%7D&pdp_npi=4%40dis%21BRL%21187.48%21112.91%21%21%21226.59%21136.46%21%40210337bc17476850847487359edee2%2112000044583936343%21rec%21BR%214254928815%21X&spm=a2g0o.store_pc_home.smartLeaderboard_2011101347554.1005008314870896&gatewayAdapt=glo2bra"
+                            class="product">
+                            <img src="products/lacinho.png" alt="" />
+                            <p class="product-name">Suporte Carregador de Celular</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="" class="product">
+                            <img src="products/moletom.png" alt="" />
+                            <p class="product-name">Celular 05</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="" class="product">
+                            <img src="products/short_masculino.png" alt="" />
+                            <p class="product-name">Game</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="" class="product">
+                            <img src="products/skigen.png" alt="" />
+                            <p class="product-name">Simulador Gamer</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
+                        <a href="https://pt.aliexpress.com/item/1005007825520671.html?gps-id=pcStoreJustForYou&scm=1007.23125.137358.0&scm_id=1007.23125.137358.0&scm-url=1007.23125.137358.0&pvid=b5129482-ac8b-4ce8-b833-c0656ac4277d&_t=gps-id%3ApcStoreJustForYou%2Cscm-url%3A1007.23125.137358.0%2Cpvid%3Ab5129482-ac8b-4ce8-b833-c0656ac4277d%2Ctpp_buckets%3A668%232846%238115%232000&pdp_ext_f=%7B%22order%22%3A%22126%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2213125%22%7D&pdp_npi=4%40dis%21BRL%2142.28%2116.04%21%21%2151.10%2119.39%21%402101ea7117476852478597681ee39f%2112000042737824658%21rec%21BR%214254928815%21X&spm=a2g0o.store_pc_home.smartJustForYou_2010389975319.1005007825520671&gatewayAdapt=glo2bra"
+                            class="product">
+                            <img src="products/tupac.png" alt="" />
+                            <p class="product-name">Console Gamer</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">4,000.00 <span>M2</span></p>
+                        </a>
                     </div>
                 </div>
             </div>
-             <div>
-            <div class="page-inner-content">
-                <h3 class="section-title">Produtos em Destaque</h3>
-                <div class="subtitle-underline"></div>
-                <div class="cols cols-4">
-                    <div class="product">
-                        <img src="products/cruz.png" alt="" />
-                        <p class="product-name">Celular 01</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/eduardosim.png" alt="" />
-                        <p class="product-name">Celular 02</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/jeans.png" alt="" />
-                        <p class="product-name">Celular 04/p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/lacinho.png" alt="" />
-                        <p class="product-name">Suporte Carregador de Celular</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/moletom.png" alt="" />
-                        <p class="product-name">Celular 05</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/short_masculino.png" alt="" />
-                        <p class="product-name">Game</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/skigen.png" alt="" />
-                        <p class="product-name">Simulador Gamer</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                    <div class="product">
-                        <img src="products/tupac.png" alt="" />
-                        <p class="product-name">Console Gamer</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <p class="product-price">4,000.00 <span>M2</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="gray-background">
-           <div class="header-inner-content">
-            <div class="header-bottom-side exclusive-container">
-                <div class="header-bottom-side-left">
-                    <h2>Smart Band 4</h2>
-                    <p> O Mi Smart Band 4 tem uma tela AMOLED 39.9% maior que o Mi Band 3, tela completamente digital com brilho ajustável, de tal modo que tudo é claro ao máximo.
-                    </p>
-                    <button>Saiba mais &#8594;</button>
+            <div class="gray-background">
+                <div class="header-inner-content">
+                    <div class="header-bottom-side exclusive-container">
+                        <div class="header-bottom-side-left">
+                            <h2>Smart Band 4</h2>
+                            <p> O Mi Smart Band 4 tem uma tela AMOLED 39.9% maior que o Mi Band 3, tela completamente
+                                digital com brilho ajustável, de tal modo que tudo é claro ao máximo.
+                            </p>
+                            <button>Saiba mais &#8594;</button>
+                        </div>
+                        <div class="header-bottom-side-right">
+                            <img src="images/exclusive.png" alt="" />
+                        </div>
+                    </div>
                 </div>
-                <div class="header-bottom-side-right">
-                    <img src="images/exclusive.png" alt=""/>
-                </div>
-            </div>
-        </div> 
 
-        <footer class="footer">
-            © 2025 - 2040 Todos os direitos reservados
-        </footer>
-     </main>
+                <footer class="footer">
+                    © 2025 - 2040 Todos os direitos reservados
+                </footer>
+    </main>
 
     <script>
-    const navbar = document.querySelector(".navbar");
-    const menuButton = document.querySelector(".menu-button"); // Corrigido o nome da variável
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button"); // Corrigido o nome da variável
 
-    menuButton.addEventListener("click", () => {
-        navbar.classList.toggle("show-menu");  // Corrigido classList 
-    });
-</script>
+        menuButton.addEventListener("click", () => {
+            navbar.classList.toggle("show-menu");  // Corrigido classList 
+        });
+    </script>
 </body>
-</html>
 
+</html>
